@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>K2M-Dev Tools - Built With 3 Cups of Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 0;
+      color: #111827;
+    }
+    header {
+      padding: 2rem;
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+    }
+    .tools {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    .tool-card {
+      background: white;
+      padding: 1rem 2rem;
+      margin: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      max-width: 500px;
+      width: 100%;
+      text-align: left;
+    }
+    .intro {
+      background: #e5e7eb;
+      padding: 2rem;
+      text-align: center;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      color: #8990a0;
+      background-color: #1f2937;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🛠️ K2M's Dev Tools</h1>
+    <p id="tagline"><em>Built by one dev, powered by coffee and questionable life choices</em></p>
+    
+    <label style="display: inline-flex; align-items: center; margin-top: 1rem; cursor: pointer;">
+        <input type="checkbox" id="toggleTagline" style="margin-right: 0.5rem;">
+        <span style="font-size: 0.9rem;">Toggle my mental state</span>
+    </label>
+  </header>
+
+  <section class="tools">
+    <div class="tool-card">
+      <h2>📦 JSON Minifier</h2>
+      <p>Turn your bloated JSON into a lean, mean, data machine. Fast. Brutal. No whitespace survivors.</p>
+    </div>
+
+    <div class="tool-card">
+      <h2>🔐 JWT Debugger</h2>
+      <p>Decode your JWTs. Because guessing your payload is so 2022.</p>
+    </div>
+
+    <div class="tool-card">
+      <h2>🧪 Regex Tester</h2>
+      <p>Test your regex with real-time feedback and existential dread.</p>
+    </div>
+
+    <div class="tool-card">
+      <h2>🌐 URL Encoder</h2>
+      <p>When your URLs get emotional and need encoding. Send them to therapy here.</p>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2>🤔 What's K2M?</h2>
+    <p><strong>K2M</strong> stands for <strong>KKM</strong> – a dev by profession, entrepreneur by passion, and inventor by production.</p>
+    <p>Whether it's slapping together tools no one asked for or solving problems that didn’t exist until 3AM, K2M is the accidental brand behind a collection of web utilities built during caffeine-fueled tunnel vision.</p>
+    <p>💡 One brain. Two monitors. Too many tabs.</p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 KKM. Proudly made with way too much caffeine.</p>
+  </footer>
+
+</body>
+<script>
+    const tagline = document.getElementById("tagline");
+    const toggle = document.getElementById("toggleTagline");
+  
+    toggle.addEventListener("change", function () {
+      if (toggle.checked) {
+        tagline.innerHTML = "<em>Still debugging... please send help ☕</em>";
+      } else {
+        tagline.innerHTML = "<em>Built by one dev, powered by coffee and questionable life choices</em>";
+      }
+    });
+  </script>
+</html>
